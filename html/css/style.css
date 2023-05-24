@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+.top-header {
+    width: 100%;
+    background-color:wheat;
+}
+
+.main {
+    background-color: papayawhip;
+    height: auto;
+    padding-bottom: 50px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.home-main, .checkout-main, .contact-main {
+    height: 90vh;
+}
+
+.nav-item {
+    color: cadetblue;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.nav-item:hover {
+    color: #000;
+    background-color: cadetblue;
+    border: none;
+}
+
+.contact-h2 {
+    font-size: 15px;
+    /* font-weight: 500; */
+}
+
+.contact-item {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer {
+    background-color: aliceblue;
+    padding: 30px 0;
+}
+
