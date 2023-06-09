@@ -57,3 +57,5 @@ ADD COLUMN price TINYTEXT;
 
 alter table `website` change column `price` `price` varchar(10);
 
+ALTER TABLE website
+ADD COLUMN image TINYTEXT;

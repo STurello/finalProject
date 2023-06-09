@@ -1,43 +1,28 @@
 import react from "react"
-import reactDOM from "react-dom"
+import Card from "./Card"
 import { useParams } from "react-router-dom"
-import { getCompanies, getCompany } from "../data"
 
 
-const AllProducts =()=> {
 
-    // useEffect(()=> {
-    //     const url = `http://localhost:3000/website`
-    // },[])
+const AllProducts =(props)=> {
 
-    let company = getCompanies(parseInt(useParams.company, 10))
-
-    const cards = company.map(item => {
+    const products = props.products
+    const productComponent = products.map(item => {
         return (
-            <main>
-
-            <cards 
-                img={item.logo}
-                company={item.company}
-                cFounded={item.cFounded}
-                wFounded={item.wFounded}
-                />
-            <h1>AllProducts page</h1>
-            </main>
+            <Card key={item.website_id} id={item.website_id} website={item.website} image={item.image} homepage={item.homepage} price={item.price} cEst={item.company_est_date} wEst={item.website_est_date} founder={item.founder} owner={item.owner} />
         )
     })
+    return (
+        <main className="main main-products">
+            <section className="container">
+                <h1>AllProducts page</h1>
+                <div className="row">
+                    {productComponent}
+                </div>
+            </section>
+        </main>
+    )
 
-    // let company = getCompany
-    // const cards = data.map(company => {
-    //     return (
-    //         <cards
-    //             // img={company.logo}
-    //             company={company.company}
-    //             cFounded={company.cFounded}
-    //             wFounded={company.wFounded}
-    //         />
-    //     )
-    // })
 }
 
 export default AllProducts

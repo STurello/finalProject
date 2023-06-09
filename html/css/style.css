@@ -24,17 +24,17 @@ body {
     height: 90vh;
 }
 
-.nav-item {
+/* .nav-item {
     color: cadetblue;
     font-size: 12px;
     text-transform: uppercase;
-}
+} */
 
-.nav-item:hover {
+/* .nav-item:hover {
     color: #000;
     background-color: cadetblue;
     border: none;
-}
+} */
 
 .contact-h2 {
     font-size: 15px;

@@ -6,45 +6,44 @@ body {
 }
 
 .top-header {
-    display: flex;
+    padding: 30px;
     justify-content: space-around;
     width: 100%;
     background-color:wheat;
 }
 
 .nav-list {
-    font-size: 19px;
+    font-size: 10px;
     padding-bottom: 10px;
 }
 
 .main {
-    /* position: relative; */
-    /* position: absolute; */
     background-color: papayawhip;
-    height: auto;
-    padding-bottom: 50px;
+    padding-block: 50px;
+    /* height: 75vh; */
     text-align: center;
-    padding-top: 30px;
 }
 
 .home-main, .checkout-main, .contact-main {
     height: 90vh;
 }
 
+/* .main-products  */
+
 .nav-item {
     color: cadetblue;
-    font-size: 12px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .nav-item:hover {
     color: #000;
-    background-color: cadetblue;
+    background-color: turquoise;
     border: none;
 }
 
 .contact-h2 {
-    font-size: 15px;
+    font-size: 20px;
     /* font-weight: 500; */
 }
 
@@ -55,6 +54,6 @@ body {
 
 footer {
     background-color: aliceblue;
-    padding: 30px 0;
+    padding-block: 50px;
 }
 

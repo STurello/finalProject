@@ -204,3 +204,56 @@ WHERE website_id = 11;
 UPDATE website
 SET price = '$600,000'
 WHERE website_id = 12;
+
+UPDATE website
+SET image = 'Best_Buy_Logo.png'
+WHERE website_id = 1;
+
+UPDATE website
+SET image = 'Walmart_logo.png'
+WHERE website_id = 2;
+
+UPDATE website
+SET image = 'Papa_Jogns_Logo.png'
+WHERE website_id = 3;
+
+UPDATE website
+SET image = 'reddit_logo.png'
+WHERE website_id = 4;
+
+UPDATE website
+SET image = 'YouTube_Logo.png'
+WHERE website_id = 5;
+
+UPDATE website
+SET image = 'Google_logo.png'
+WHERE website_id = 6;
+
+UPDATE website
+SET image = 'Wikipedia_logo.png'
+WHERE website_id = 7;
+
+UPDATE website
+SET image = 'Twitter_logo.webp'
+WHERE website_id = 8;
+UPDATE website
+
+UPDATE website
+SET image = 'Facebook_logo.png'
+WHERE website_id = 9;
+
+UPDATE website
+SET image = 'cracked_logo.png'
+WHERE website_id = 10;
+
+UPDATE website
+SET image = 'CollegeHumor_logo.webp'
+WHERE website_id = 11;
+
+UPDATE website
+SET image = 'Netflix_logo.jpg'
+WHERE website_id = 12;
+
+UPDATE website
+SET image ='Papa_Johns_Logo.png'
+WHERE website_id = 3;

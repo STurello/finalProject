@@ -1,23 +1,36 @@
-import { useParams, useNavigate, useLocation } from "react-router-dom"
-import { getCompanies } from "../data"
+import { useState, useEffect } from "react"
+import { useParams } from "react-router-dom"
+import axios from "axios"
 
 const Single =()=> {
+    const [product, setProduct] = useState({})
+    const params = useParams()
+    const url = `http://localhost:3000/api/website/${params.id}`
+    
+    useEffect(()=> {
+        axios.get(url).then(res => setProduct(res.data))
+    }, [])
+    console.log(product)
 
-    let company = getCompanies
-    return(
-        <main className="main main-products">
-            {/* <h1>company: {company.company}</h1>
-            
-        <section style={{padding: '1rem'}}>
-            <h2>: {company.id} </h2>
-            <p>{company.homepage}: {company.company} </p>
-        </section> */}
+    return (
+        <main className="main ">
+            <section className="container">
+                <div className="row">
+                    <div className="col-md-7">
+                        <img src={`/media/${product.image}`} alt={product.homepage} className="img-fluid card-img rounded" />
 
-        <div className="card">
-            <img src={company.logo} />
-            <p>{company.name} </p>
-            <p><a href="{company.homepage}">{company.homepage} </a> </p>
-        </div>
+                    </div>
+                    <div className="col-md-5">
+                        <ul>
+                            <li>{product.website}</li>
+                            <li>{product.homepage}</li>
+                            <li>Company Founded: {product.company_est_date}</li>
+                            <li>Website Launched: {product.website_est_date}</li>
+                            <li>Price: {product.price}</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </main>
     )
 }

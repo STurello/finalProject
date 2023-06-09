@@ -3,39 +3,39 @@ import reactDOM from "react-dom"
 
 const Checkout =()=> {
     return(
-        <main class="main checkout-main">
-        <section class="section section-checkout">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="checkout-header text-capitalize">checkout</h2>
-                        <p class="checkout-text">Make all selections and pay</p>
+        <main className="main checkout-main">
+        <section className="section section-checkout">
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <h2 className="checkout-header text-capitalize">checkout</h2>
+                        <p className="checkout-text">Make all selections and pay</p>
                     </div>
-                    <div class="col">
-                        <p class="checkout-item-count">
+                    <div className="col">
+                        <p className="checkout-item-count">
                             <span id="checkoutItemCount"></span>
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <table class="table" id="table">
-                            <tr class="table-headers">
+                <div className="row">
+                    <div className="col">
+                        <table className="table" id="table">
+                            <tr className="table-headers">
                                 <td>website name</td>
                                 <td>site price</td>
                                 <td>subtotal</td>
                             </tr>
                             <tbody id="tbody"></tbody>
-                            <tr class="totals" id="totals">
+                            <tr className="totals" id="totals">
                                 <td colspan="3">
-                                    <p class="total-subtotal" id="totalSubtotal">Subtotal:</p>
-                                    <p class="total-tax" id="totalTax">Tax:</p>
-                                    <p class="total-total" id="totalTotal">Total:</p>
+                                    <p className="total-subtotal" id="totalSubtotal">Subtotal:</p>
+                                    <p className="total-tax" id="totalTax">Tax:</p>
+                                    <p className="total-total" id="totalTotal">Total:</p>
                                 </td>
-                                <td class="total-values">
-                                    <p class="subtotal-value" id="subtotalValue">$<span id="subValue"></span></p>
-                                    <p class="tax-value">$<span id="taxValue"></span></p>
-                                    <p class="total-value">$<span id="totalValue"></span> </p>
+                                <td className="total-values">
+                                    <p className="subtotal-value" id="subtotalValue">$<span id="subValue"></span></p>
+                                    <p className="tax-value">$<span id="taxValue"></span></p>
+                                    <p className="total-value">$<span id="totalValue"></span> </p>
                                 </td>
                             </tr>
                         </table>
